@@ -1,9 +1,16 @@
 public class Dog extends Animal{
-    public String dogFood;
+    public String dogHome;
 
-    public Dog(String food, String location, String dogFood){
-        super(food, location);
-        this.dogFood = dogFood;
-
+    public Dog(){
+        super();
+    }
+    public void makeNoise (){
+        System.out.println("Dog " + action);
+    }
+    public void eat() {
+        action = "eat";
+        food = "meat";
+        location = "kennel";
+        System.out.println("Dog " + action);
     }
 }

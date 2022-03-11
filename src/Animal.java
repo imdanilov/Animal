@@ -3,18 +3,16 @@ public class Animal {
     public String location;
     public String action;
 
-    public Animal(String food, String location){
-        this.food = food;
-        this.location = location;
+    public Animal(){
         action = "doing nothing";
     }
-
-    public void makeNoise(){
+    public void makeNoise() {
         System.out.println("Animal " + action);
     }
-
     public void eat(){
         action = "eat";
+        food = "any";
+        location = "any";
         System.out.println("Animal " + action);
     }
     public void sleep(){
